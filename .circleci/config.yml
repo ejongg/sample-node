@@ -55,9 +55,9 @@ workflows:
   push: 
     jobs:
       - format
-      - test
-        requires:
-          - format
+      - test:
+          requires:
+            - format
 
       # For running simple node tests, you could optionally use the node/test job from the orb to replicate and replace the job above in fewer lines.
       # - node/test
