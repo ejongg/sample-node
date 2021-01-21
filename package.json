@@ -7,7 +7,8 @@
     "build": "tsc",
     "test": "jest dist",
     "watch": "tsc --watch",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "prettier": "prettier . -w -l"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,9 @@
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
     "eslint": "^7.18.0",
-    "jest": "^26.6.3"
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
   }
 }

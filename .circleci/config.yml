@@ -34,7 +34,7 @@ jobs:
       - run:
           name: Run tests
           command: npm run test
-  lint:
+  format:
     docker:
       - image: cimg/node:15.1
     steps:
@@ -43,6 +43,9 @@ jobs:
       - run:
           name: Lint
           command: npm run lint
+      - run:
+          name: Prettier
+          command: npm run prettier
 
 workflows:
   # Below is the definition of your workflow.
